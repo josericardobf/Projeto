@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Projeto.Projeto" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="Projeto" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="Projeto" android:name="md500014fa4a78329d2ca4f63b96759a89a.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Cliente" android:name="md55c7a6ad3a6d1804a4c558c629b7bea88.ClienteActivity" />
+    <activity android:label="Inserir Cliente" android:name="md55c7a6ad3a6d1804a4c558c629b7bea88.InserirClienteActivity" />
+    <activity android:label="Selecionar Cliente" android:name="md55c7a6ad3a6d1804a4c558c629b7bea88.SelecionarClienteActivity" />
+    <activity android:label="Categoria" android:name="md5f2efdf11b5ea245564a6c0484c8df077.CategoriaActivity" />
+    <activity android:label="Inserir Categoria" android:name="md5f2efdf11b5ea245564a6c0484c8df077.InserirCategoriaActivity" />
+    <activity android:label="Selecionar Categoria" android:name="md5f2efdf11b5ea245564a6c0484c8df077.SelecionarCategoriaActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Projeto.Projeto.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Projeto.Projeto" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
